@@ -5,7 +5,7 @@ import Button from "@mui/material/Button";
 import { useEffect, useState } from "react";
 import Link from "next/link";
 
-export default function Reto2() {
+const Reto2 = () => {
   const [poke, setPoke] = useState(
     "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png"
   );
@@ -73,4 +73,6 @@ export default function Reto2() {
       </main>
     </>
   );
-}
+};
+
+export default Reto2;

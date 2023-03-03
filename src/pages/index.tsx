@@ -3,6 +3,7 @@ import Image from "next/image";
 import styles from "@/styles/Home.module.css";
 import Button from "@mui/material/Button";
 import { useState } from "react";
+import Link from "next/link";
 
 export default function Home() {
   const [pokes, setPokes] = useState([
@@ -17,6 +18,17 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
+        <div className={styles.center}>
+          <Link href={"/reto-2"}>
+            <Button
+              variant="contained"
+              color="success"
+              style={{ marginBottom: "10px" }}
+            >
+              RETO 2
+            </Button>
+          </Link>
+        </div>
         <div className={styles.description}>
           <Button
             variant="contained"
